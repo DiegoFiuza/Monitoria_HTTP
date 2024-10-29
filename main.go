@@ -57,6 +57,7 @@ func checkServer(servidores []Server) []Server {
 		servidor.tempoExecucao = time.Since(agora).Seconds()
 		fmt.Printf("Status: [%d] Tempo de carga: [%f] URL: [%s]\n", servidor.status, servidor.tempoExecucao, servidor.ServerUrl)
 	}
+
 	return downServers
 
 }
